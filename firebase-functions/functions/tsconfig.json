@@ -1,28 +1,26 @@
 {
   "compilerOptions": {
-      "baseUrl": "src",
-      "sourceMap": true,
-      "noImplicitAny": false,
-      "module": "commonjs",
-      "strict": true,
-      "noEmit": true,
-      "target": "esnext",
-      "jsx": "react",
-      "allowJs": true,
-      "lib": ["dom", "es2015", "es2017"],
-      "noImplicitReturns": true,
-      "esModuleInterop": true,
-      "resolveJsonModule": true
+    "baseUrl": "src",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "strict": true,
+    "target": "esnext",
+    "jsx": "react",
+    "allowJs": true,
+    "lib": ["dom", "es2015", "es2017"],
+    "noImplicitReturns": true,
+    "resolveJsonModule": true,
+    "outDir": "dist",
   },
+  "compileOnSave": true,
+  "include": [
+    "src"
+  ],
   "exclude": [
     "./node_modules", 
     "./public", 
     "./.cache",
     "**.cy.ts"
   ],
-  "include": [
-      "./src/**/*",
-      "./cypress/fixtures/**/*",
-      "./cypress/integration/**/*",
-  ]
 }
